@@ -13,28 +13,35 @@ namespace CG67.Bamboue.Domaine
 
         private int id;
         private String nom;
-        private String inseeCommunne;
         private String lieuDit;
-        private int numChampllotRPG;
+        private String commune;//Le nom de la commune d'appartenance;
+        private String nomExploitation;//le nom de l'exploitation agricole;
         private int habitation;
-        private int perimetreProtectionRapporche;
+        private int perimetreProtectionRapproche;
         private int perimetreProtectionEloigne;
         private int captageEau;
         private int zoneInondable;
         private int coursEau;
-        private int valide;
         private String commentaire;
-        private int actif;
-        private String codeImportSANDRE;
-        private int id_champ_pbou;
 
         #endregion
        
-        public Champ(int id, String nom, String inseeCommune, String lieuDit, int num, int habitation,
+        public Champ(int id, String nom, String inseeCommune, String lieuDit, int habitation,
             int perimetreRapproche, int perimetreEloigne, int captageEau, int zoneInondable,
-            int coursEau, int valide, String commentaire, int actif, String code, int idChamp)
+            int coursEau, String commentaire, String commune, String nomExploitation)
         {
-
+            this.id = id;
+            this.nom = nom;
+            this.lieuDit = lieuDit;
+            this.habitation = habitation;
+            this.perimetreProtectionEloigne = perimetreEloigne;
+            this.perimetreProtectionRapproche = perimetreRapproche;
+            this.captageEau = captageEau;
+            this.zoneInondable = zoneInondable;
+            this.coursEau = coursEau;
+            this.commentaire = commentaire;
+            this.commune = commune;
+            this.nomExploitation = nomExploitation;
         }
 
         #region Accesseurs
@@ -42,6 +49,12 @@ namespace CG67.Bamboue.Domaine
         public int Id{
             get { return this.id; }
             set { this.id = value; }
+        }
+
+        public String Nom
+        {
+            get { return this.nom; }
+            set { this.nom = value; }
         }
 
         #endregion
