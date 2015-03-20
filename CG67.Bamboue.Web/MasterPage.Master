@@ -16,10 +16,11 @@
     </header>
     <form id="form" runat="server">
         <nav>
+            <asp:SiteMapDataSource ID="smps" runat="server" />
         </nav>
         <section>
             <div>
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:ContentPlaceHolder ID="cph" runat="server">
         
                 </asp:ContentPlaceHolder>
             </div>
