@@ -6,23 +6,24 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Bamboue</title>
+    <link rel="stylesheet" href="Styles/StyleMasterPage.css" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <header style="background-color: #3366CC; text-align: center;">
-        <img src="Images/imageDepartement" />
+    <header>
+        <img src="Images/logo_cg67.png" />
     </header>
-    <nav>
-    </nav>
-    <form id="form1" runat="server">
-    <section>
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    <form id="form" runat="server">
+        <nav>
+        </nav>
+        <section>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-            </asp:ContentPlaceHolder>
-        </div>
-    </section>
+                </asp:ContentPlaceHolder>
+            </div>
+        </section>
     </form>
     <footer>
 
