@@ -27,7 +27,7 @@ namespace CG67.Bamboue.Domaine
 
         #region Constructeur
 
-        public Champ(int id, String nom, String inseeCommune, String lieuDit, int habitation,
+        public Champ(int id, String nom, String lieuDit, int habitation,
             int perimetreRapproche, int perimetreEloigne, int captageEau, int zoneInondable,
             int coursEau, String commentaire, String commune, String nomExploitation)
         {
