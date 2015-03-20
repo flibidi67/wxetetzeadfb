@@ -4,3 +4,15 @@
 header{
     background-color: blue;
 }
+
+form{
+    display: flex;
+}
+
+nav{
+    float: left;
+}
+
+section{
+    margin-left: 150px;
+}
