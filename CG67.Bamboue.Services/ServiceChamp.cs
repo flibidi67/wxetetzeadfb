@@ -11,11 +11,11 @@ namespace CG67.Bamboue.Services
 {
     class ServiceChamp
     {
-        #region Constructeur
-        public ServiceChamp() { }
-
-        #endregion
-
+        /// <summary>
+        /// Fonction permettant d'avoir les informations d'un champs en fonction de son id
+        /// </summary>
+        /// <param name="id">id du champs</param>
+        /// <returns>champs</returns>
         public Champ GetChampsParId(int id)
         {
             Champ champ = null;

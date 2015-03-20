@@ -13,6 +13,11 @@ namespace CG67.Bamboue.AccesDonnees
     {
         ConnectionStringSettings connec = new ConnectionStringSettings("bamboue", ConfigurationManager.ConnectionStrings["bamboueConnectionString"].ConnectionString);
 
+        /// <summary>
+        /// Fonction permettant de trouver un champs en fonction de son installation
+        /// </summary>
+        /// <param name="id">id de l'installation</param>
+        /// <returns>DataSet contenant les informations du champs</returns>
         public DataSet GetChampParIdInstallation(int id)
         {
             String query = "SELECT * FROM Champ c, Champ_Install i WHERE c.IdChamp = i.IdChamp AND i.IdInstallation = " + id.ToString();
@@ -20,6 +25,11 @@ namespace CG67.Bamboue.AccesDonnees
             return ds;
         }
 
+        /// <summary>
+        /// Fonction permettant de trouver un champs en fonction de son nom
+        /// </summary>
+        /// <param name="nom"> nom du champs</param>
+        /// <returns>DataSet contenant les informations du champs</returns>
         public DataSet GetChampParNom(String nom)
         {
             String query = "SELECT * FROM Champ WHERE Nom = " + nom;
@@ -27,6 +37,10 @@ namespace CG67.Bamboue.AccesDonnees
             return ds;
         }
 
+        /// <summary>
+        /// Fonction permettant de mettre a jour un champs
+        /// </summary>
+        /// <param name="requete">A REVOIR</param>
         public void UpdateChamp(String requete)
         {
             Utilities.Utilitaire.UpdateBase(requete, connec);

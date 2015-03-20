@@ -2,14 +2,13 @@
 using System.Data;
 using System.Data.Common;
 using System.Configuration;
-using CG67.Bamboue.Domaine;
 using System.Xml;
 
 namespace CG67.Bamboue.Utilities
 {
     public class Utilitaire
     {
-        #region BuildDataSet & Update
+        #region BuildDataSet
 
         public static DataSet BuildDataSet(String CommandText, ConnectionStringSettings connectionString)
         {
@@ -37,7 +36,9 @@ namespace CG67.Bamboue.Utilities
             }
             return ds;
         }
+        #endregion
 
+        #region Udpate
         public static void UpdateBase(String CommandText, ConnectionStringSettings connectionString)
         {
             DbProviderFactory factory = DbProviderFactories.GetFactory(connectionString.ProviderName);

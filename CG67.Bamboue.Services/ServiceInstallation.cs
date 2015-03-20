@@ -11,25 +11,32 @@ namespace CG67.Bamboue.Services
 {
     class ServiceInstallation
     {
-        DonneesInstallation donneesInstallation = new DonneesInstallation();
-         #region Constructeur
-        public ServiceInstallation() { }
 
-        #endregion
-
-        public Installation GetInstallations()
+        /// <summary>
+        /// Fonction retournant la liste des installations
+        /// </summary>
+        /// <returns>Liste des intallations</returns>
+        public List<Installation> GetInstallations()
         {
-            Installation installation = new Installation();
+            #region Variables
+            List<Installation> liste_installation = new List<Installation>();
+            Installation installation;
+            DataSet ds = new DataSet();
+            DonneesInstallation donneesInstallation = new DonneesInstallation();
+            #endregion
 
-            DataSet ds = donneesInstallation.GetToutesInstallations();
+            ds = donneesInstallation.GetToutesInstallations();
 
-            if (ds != null)
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
             {
-                int idInstallation = Convert.ToInt32(ds.Tables[0].Rows[0].ItemArray.GetValue(0).ToString());
-                String nom = (String)ds.Tables[0].Rows[0].ItemArray.GetValue(1);
-                installation = new Installation(idInstallation, nom);
+                //Ajout des valeurs pour le magasin
+                installation = new Installation();
+                installation.IdInstallation = Convert.ToInt32(ds.Tables[0].Rows[i][0]);
+                installation.Nom = ds.Tables[0].Rows[i][1].ToString();
+                liste_installation.Add(installation);
             }
-            return installation;
+
+            return liste_installation;
         }
     }
 }
