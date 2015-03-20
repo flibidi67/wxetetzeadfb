@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace CG67.Bamboue.AccesDonnees
 {
-    class DonneeChamp
+    public class DonneeChamp
     {
         ConnectionStringSettings connec = new ConnectionStringSettings("bamboue", ConfigurationManager.ConnectionStrings["bamboueConnectionString"].ConnectionString);
 

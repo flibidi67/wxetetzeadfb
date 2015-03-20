@@ -25,8 +25,8 @@ namespace CG67.Bamboue.Services
             if(ds != null){
                 
                 int idChamp = Convert.ToInt32(ds.Tables[0].Rows[0].ItemArray.GetValue(0).ToString());
-                String nom = (String)ds.Tables[0].Rows[0].ItemArray.GetValue(1); ;
-                String lieuDit = (String)ds.Tables[0].Rows[0].ItemArray.GetValue(2); ;
+                String nom = (String)ds.Tables[0].Rows[0].ItemArray.GetValue(1);
+                String lieuDit = (String)ds.Tables[0].Rows[0].ItemArray.GetValue(2);
                 String commune = (String)ds.Tables[0].Rows[0].ItemArray.GetValue(3); ;//Le nom de la commune d'appartenance;
                 String nomExploitation = (String)ds.Tables[0].Rows[0].ItemArray.GetValue(4);;//le nom de l'exploitation agricole;
                 int habitation = Convert.ToInt32(ds.Tables[0].Rows[0].ItemArray.GetValue(5).ToString());

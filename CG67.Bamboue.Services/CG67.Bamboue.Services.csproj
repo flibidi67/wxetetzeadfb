@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceChamp.cs" />
+    <Compile Include="ServiceInstallation.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CG67.Bamboue.AccesDonnees\CG67.Bamboue.AccesDonnees.csproj">

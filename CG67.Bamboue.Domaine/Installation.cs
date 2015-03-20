@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CG67.Bamboue.Domaine
 {
-    class Installation
+    public class Installation
     {
         #region Propriétés
         private int idInstallation;
@@ -27,6 +27,14 @@ namespace CG67.Bamboue.Domaine
             this.capaciteTraitement = capaciteTraitement;
             this.commentaire = commentaire;
         }
+
+        public Installation(int idInstallation, string nom)
+        {
+            this.idInstallation = idInstallation;
+            this.nom = nom;
+        }
+
+        public Installation() { }
         #endregion 
 
         #region Accesseurs

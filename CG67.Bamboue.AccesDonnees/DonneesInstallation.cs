@@ -9,13 +9,13 @@ using System.Data;
 
 namespace CG67.Bamboue.AccesDonnees
 {
-    class DonneesInstallation
+    public class DonneesInstallation
     {
         ConnectionStringSettings connec = new ConnectionStringSettings("bamboue", ConfigurationManager.ConnectionStrings["bamboueConnectionString"].ConnectionString);
 
         public DataSet GetToutesInstallations()
         {
-            String query = "SELECT Nom FROM Installation";
+            String query = "SELECT IdInstallation, Nom FROM Installation";
             DataSet ds = Utilities.Utilitaire.BuildDataSet(query, connec);
             return ds;
         }
