@@ -57,8 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Accueil.aspx" />
-    <Content Include="Resultat.aspx" />
     <Content Include="Detail.aspx" />
     <Content Include="Styles\StyleMasterPage.css" />
     <Content Include="Web.config" />
