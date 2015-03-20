@@ -40,11 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DonneesChamps.cs" />
     <Compile Include="DonneesInstallation.cs" />
+    <Compile Include="DonneeChamp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CG67.Bamboue.Utilities\CG67.Bamboue.Utilities.csproj">
+      <Project>{ef112b01-57b9-49c3-b75f-79ca907505bc}</Project>
+      <Name>CG67.Bamboue.Utilities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CG67.Bamboue.Utilities\CG67.Bamboue.Utilities.csproj">
       <Project>{ef112b01-57b9-49c3-b75f-79ca907505bc}</Project>
       <Name>CG67.Bamboue.Utilities</Name>
