@@ -10,15 +10,19 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <header>
-        
+    <header style="background-color: #3366CC; text-align: center;">
+        <img src="Images/imageDepartement" />
     </header>
+    <nav>
+    </nav>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    <section>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
-        </asp:ContentPlaceHolder>
-    </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </section>
     </form>
     <footer>
 
