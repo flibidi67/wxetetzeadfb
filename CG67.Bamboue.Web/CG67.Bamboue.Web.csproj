@@ -57,19 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Accueil.aspx" />
-    <Content Include="Resultat.aspx" />
     <Content Include="Detail.aspx" />
     <Content Include="Styles\StyleMasterPage.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Accueil.aspx.cs">
-      <DependentUpon>Accueil.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Accueil.aspx.designer.cs">
-      <DependentUpon>Accueil.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Detail.aspx.cs">
       <DependentUpon>Detail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -85,12 +77,6 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resultat.aspx.cs">
-      <DependentUpon>Resultat.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Resultat.aspx.designer.cs">
-      <DependentUpon>Resultat.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
