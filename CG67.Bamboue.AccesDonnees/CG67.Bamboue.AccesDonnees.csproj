@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DonneeChamp.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DonneesInstallation.cs" />
-    <Compile Include="DonneeChamp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
