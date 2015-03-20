@@ -19,5 +19,17 @@ namespace CG67.Bamboue.AccesDonnees
             DataSet ds = Utilities.Utilitaire.BuildDataSet(query, connec);
             return ds;
         }
+
+        public DataSet GetChampParNom(String nom)
+        {
+            String query = "SELECT * FROM Champ WHERE Nom = " + nom;
+            DataSet ds = Utilities.Utilitaire.BuildDataSet(query, connec);
+            return ds;
+        }
+
+        public void UpdateChamp(String requete)
+        {
+            Utilities.Utilitaire.UpdateBase(requete, connec);
+        }
     }
 }
