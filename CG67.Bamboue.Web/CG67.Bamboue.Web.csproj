@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Detail.aspx" />
+    <Content Include="Resultat.aspx" />
     <Content Include="Styles\StyleMasterPage.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -77,6 +78,13 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resultat.aspx.cs">
+      <DependentUpon>Resultat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Resultat.aspx.designer.cs">
+      <DependentUpon>Resultat.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPage.Master" />
