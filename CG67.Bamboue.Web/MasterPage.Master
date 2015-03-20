@@ -16,13 +16,13 @@
     </header>
     <form id="form" runat="server">
         <nav>
-            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource" ImageSet="Simple" NodeIndent="10">
+            <asp:TreeView ID="treViw" runat="server" DataSourceID="SiteMapDataSource" ImageSet="Simple" NodeIndent="10">
                 <HoverNodeStyle Font-Underline="True" ForeColor="#DD5555" />
                 <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="0px" NodeSpacing="0px" VerticalPadding="0px" />
                 <ParentNodeStyle Font-Bold="False" />
                 <SelectedNodeStyle Font-Underline="True" ForeColor="#DD5555" HorizontalPadding="0px" VerticalPadding="0px" />
             </asp:TreeView>
-            <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+            <asp:SiteMapDataSource ID="sitSrc" runat="server" />
         </nav>
         <section>
             <div>

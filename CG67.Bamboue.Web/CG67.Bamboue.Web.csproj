@@ -107,6 +107,12 @@
   <ItemGroup>
     <Folder Include="Images\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CG67.Bamboue.Services\CG67.Bamboue.Services.csproj">
+      <Project>{190d8983-1171-4cce-aa40-af5f5a14a1c9}</Project>
+      <Name>CG67.Bamboue.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

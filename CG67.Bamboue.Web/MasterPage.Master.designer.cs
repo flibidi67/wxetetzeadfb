@@ -31,22 +31,22 @@ namespace CG67.Bamboue.Web {
         protected global::System.Web.UI.HtmlControls.HtmlForm form;
         
         /// <summary>
-        /// Contrôle TreeView1.
+        /// Contrôle treViw.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TreeView TreeView1;
+        protected global::System.Web.UI.WebControls.TreeView treViw;
         
         /// <summary>
-        /// Contrôle SiteMapDataSource.
+        /// Contrôle sitSrc.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SiteMapDataSource SiteMapDataSource;
+        protected global::System.Web.UI.WebControls.SiteMapDataSource sitSrc;
         
         /// <summary>
         /// Contrôle cph.

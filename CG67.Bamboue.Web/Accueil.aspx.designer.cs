@@ -11,5 +11,14 @@ namespace CG67.Bamboue.Web {
     
     
     public partial class Accueil {
+        
+        /// <summary>
+        /// Contrôle ddlInstallations.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlInstallations;
     }
 }
