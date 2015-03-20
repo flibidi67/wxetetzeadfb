@@ -37,5 +37,9 @@ namespace CG67.Bamboue.Utilities
         }
 
         #endregion
+
+        #region Export XML
+
+        #endregion
     }
 }
