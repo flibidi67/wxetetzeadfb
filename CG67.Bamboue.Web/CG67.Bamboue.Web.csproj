@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="Accueil.aspx" />
     <Content Include="Detail.aspx" />
+    <Content Include="Images\logo_cg67.png" />
     <Content Include="Resultat.aspx" />
     <Content Include="Styles\StyleMasterPage.css" />
     <Content Include="Web.config" />
@@ -104,9 +105,7 @@
     </None>
     <Content Include="Web.sitemap" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CG67.Bamboue.Services\CG67.Bamboue.Services.csproj">
       <Project>{190d8983-1171-4cce-aa40-af5f5a14a1c9}</Project>
