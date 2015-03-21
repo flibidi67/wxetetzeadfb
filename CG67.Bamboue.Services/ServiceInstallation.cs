@@ -19,7 +19,7 @@ namespace CG67.Bamboue.Services
         public List<Installation> GetInstallations()
         {
             #region Variables
-            List<Installation> liste_installation = new List<Installation>();
+            List<Installation> listeInstallations = new List<Installation>();
             Installation installation;
             DataSet ds = new DataSet();
             DonneesInstallation donneesInstallation = new DonneesInstallation();
@@ -33,10 +33,10 @@ namespace CG67.Bamboue.Services
                 installation = new Installation();
                 installation.IdInstallation = Convert.ToInt32(ds.Tables[0].Rows[i][0]);
                 installation.Nom = ds.Tables[0].Rows[i][1].ToString();
-                liste_installation.Add(installation);
+                listeInstallations.Add(installation);
             }
 
-            return liste_installation;
+            return listeInstallations;
         }
     }
 }
