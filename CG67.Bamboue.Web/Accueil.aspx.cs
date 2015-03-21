@@ -14,5 +14,10 @@ namespace CG67.Bamboue.Web
         {
 
         }
+
+        protected void ddlInstallations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
