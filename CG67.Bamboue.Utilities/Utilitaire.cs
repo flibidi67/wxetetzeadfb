@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.Common;
 using System.Configuration;
 using System.Xml;
+using CG67.Bamboue.Domaine;
 
 namespace CG67.Bamboue.Utilities
 {
